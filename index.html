@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prime VaultX gaming store. Browse gaming top-ups, gift cards, and digital services.">
+  <title>Prime VaultX | Gaming Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">⚡ PRIME VAULTX — YOUR GAMING STORE <span>•</span> Fast support, clear prices</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Prime VaultX home">
+      <span class="brand-mark">PV</span>
+      <span>PRIME <b>VAULTX</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <label class="search">
+      <span aria-hidden="true">⌕</span>
+      <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+    </label>
+    <button class="cart-button" id="cartButton" aria-label="View order list">🛒 <span id="cartCount">0</span></button>
+    <a class="login-link" href="#contact">Contact</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="hero-content">
+        <p class="eyebrow">LEVEL UP YOUR LOADOUT</p>
+        <h1>PRIME <span>VAULTX</span></h1>
+        <p class="hero-subtitle">Fast <i>•</i> Safe <i>•</i> Affordable</p>
+        <p class="hero-copy">Your gaming store for top-ups, gift cards, and digital extras.</p>
+        <a class="button button-primary" href="#products">Explore Products <span>→</span></a>
+        <p class="hero-note">Demo storefront · Replace sample products and contact details before launch</p>
+      </div>
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="hero-badge"><span class="badge-icon">✦</span><span><b>GAMER FIRST</b><small>Built for your next level</small></span></div>
+    </section>
+
+    <section class="benefits" aria-label="Store benefits">
+      <div class="benefit"><span class="benefit-icon blue">ϟ</span><div><b>Quick Responses</b><small>Clear order updates</small></div></div>
+      <div class="benefit"><span class="benefit-icon purple">♢</span><div><b>Transparent Pricing</b><small>Know the price upfront</small></div></div>
+      <div class="benefit"><span class="benefit-icon cyan">◉</span><div><b>Support</b><small>Contact us for help</small></div></div>
+      <div class="benefit"><span class="benefit-icon pink">◇</span><div><b>Gaming Essentials</b><small>Popular digital items</small></div></div>
+    </section>
+
+    <section class="store-layout" id="products">
+      <aside class="categories">
+        <h2>Categories</h2>
+        <button class="category active" data-category="all">▦ <span>All Products</span></button>
+        <button class="category" data-category="topups">⚡ <span>Game Top-ups</span></button>
+        <button class="category" data-category="giftcards">▣ <span>Gift Cards</span></button>
+        <button class="category" data-category="memberships">✦ <span>Memberships</span></button>
+        <button class="category" data-category="services">⋯ <span>Other Services</span></button>
+        <div class="aside-help">
+          <span class="help-spark">✧</span>
+          <b>Need help?</b>
+          <p>Ask us about product availability before ordering.</p>
+          <a href="#contact">Contact support →</a>
+        </div>
+      </aside>
+
+      <div class="product-area">
+        <div class="section-heading">
+          <div><p class="eyebrow">THE VAULT</p><h2><span class="flame">✦</span> Popular Products</h2></div>
+          <span class="product-count" id="productCount">8 products</span>
+        </div>
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-category="topups" data-name="Free Fire Diamonds">
+            <div class="product-art art-fire"><span class="art-symbol">✹</span><span class="art-label">FREE FIRE<small>DIAMONDS</small></span></div>
+            <div class="product-info"><span class="tag">TOP-UP</span><h3>Free Fire Diamonds</h3><p class="product-desc">Sample pack · 100 diamonds</p><div class="price-row"><strong>₹80</strong><span class="old-price">Sample price</span></div><button class="order-button" data-product="Free Fire Diamonds" data-price="₹80">Order Now <span>↗</span></button></div>
+          </article>
+          <article class="product-card" data-category="topups" data-name="BGMI UC">
+            <div class="product-art art-bgmi"><span class="art-symbol">▣</span><span class="art-label">BATTLEGROUNDS<small>MOBILE INDIA</small></span></div>
+            <div class="product-info"><span class="tag">TOP-UP</span><h3>BGMI UC</h3><p class="product-desc">Sample pack · 60 UC</p><div class="price-row"><strong>₹75</strong><span class="old-price">Sample price</span></div><button class="order-button" data-product="BGMI UC" data-price="₹75">Order Now <span>↗</span></button></div>
+          </article>
+          <article class="product-card" data-category="topups" data-name="PUBG Mobile UC">
+            <div class="product-art art-pubg"><span class="art-symbol">◈</span><span class="art-label">PUBG MOBILE<small>UC TOP-UP</small></span></div>
+            <div class="product-info"><span class="tag">TOP-UP</span><h3>PUBG Mobile UC</h3><p class="product-desc">Sample pack · 60 UC</p><div class="price-row"><strong>₹80</strong><span class="old-price">Sample price</span></div><button class="order-button" data-product="PUBG Mobile UC" data-price="₹80">Order Now <span>↗</span></button></div>
+          </article>
+          <article class="product-card" data-category="giftcards" data-name="Roblox Gift Card">
+            <div class="product-art art-roblox"><span class="roblox-mark">◆</span><span class="art-label">ROBLOX<small>GIFT CARD</small></span></div>
+            <div class="product-info"><span class="tag">GIFT CARD</span><h3>Roblox Gift Card</h3><p class="product-desc">Sample pack · 800 Robux</p><div class="price-row"><strong>₹350</strong><span class="old-price">Sample price</span></div><button class="order-button" data-product="Roblox Gift Card" data-price="₹350">Order Now <span>↗</span></button></div>
+          </article>
+          <article class="product-card" data-category="memberships" data-name="Discord Nitro">
+            <div class="product-art art-discord"><span class="discord-mark">◕</span><span class="art-label">DISCORD<small>NITRO</small></span></div>
+            <div class="product-info"><span class="tag">MEMBERSHIP</span><h3>Discord Nitro</h3><p class="product-desc">Sample · 1 month</p><div class="price-row"><strong>₹399</strong><span class="old-price">Sample price</span></div><button class="order-button" data-product="Discord Nitro" data-price="₹399">Order Now <span>↗</span></button></div>
+          </article>
+          <article class="product-card" data-category="topups" data-name="Free Fire Weekly Pack">
+            <div class="product-art art-weekly"><span class="art-symbol">✦</span><span class="art-label">WEEKLY<small>PACK</small></span></div>
+            <div class="product-info"><span class="tag">TOP-UP</span><h3>Free Fire Weekly Pack</h3><p class="product-desc">Sample weekly bundle</p><div class="price-row"><strong>₹149</strong><span class="old-price">Sample price</span></div><button class="order-button" data-product="Free Fire Weekly Pack" data-price="₹149">Order Now <span>↗</span></button></div>
+          </article>
+          <article class="product-card" data-category="memberships" data-name="BGMI Season Pass">
+            <div class="product-art art-pass"><span class="art-symbol">♛</span><span class="art-label">SEASON<small>PASS</small></span></div>
+            <div class="product-info"><span class="tag">MEMBERSHIP</span><h3>BGMI Season Pass</h3><p class="product-desc">Sample pass · check availability</p><div class="price-row"><strong>₹299</strong><span class="old-price">Sample price</span></div><button class="order-button" data-product="BGMI Season Pass" data-price="₹299">Order Now <span>↗</span></button></div>
+          </article>
+          <article class="product-card" data-category="services" data-name="Custom Request">
+            <div class="product-art art-custom"><span class="controller">⌘</span><span class="art-label">CUSTOM<small>REQUEST</small></span></div>
+            <div class="product-info"><span class="tag">CUSTOM</span><h3>Custom Request</h3><p class="product-desc">Ask about a game or service</p><div class="price-row"><strong>Ask us</strong><span class="old-price">Price varies</span></div><button class="order-button" data-product="Custom Request" data-price="Price on request">Order Now <span>↗</span></button></div>
+          </article>
+        </div>
+        <div id="emptyState" class="empty-state" hidden>No products found. Try another search or category.</div>
+      </div>
+    </section>
+
+    <section class="join-banner" id="about">
+      <div class="join-icon">♛</div>
+      <div><h2>Enter the Prime Vault</h2><p>Browse the catalogue and contact us to confirm availability and final pricing.</p></div>
+      <a class="button button-outline" href="#contact">Get Started <span>→</span></a>
+    </section>
+
+    <section class="trust-note">
+      <span>ⓘ</span><p><b>Before ordering:</b> Prices and products on this demo are examples. Confirm the real price, delivery method, refund policy, and seller authorization before accepting payments. Never ask customers for passwords or one-time verification codes.</p>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#home"><span class="brand-mark">PV</span><span>PRIME <b>VAULTX</b></span></a>
+        <p>Play more. Level up.</p>
+        <div class="socials"><a href="#" aria-label="Discord placeholder">◉</a><a href="#" aria-label="YouTube placeholder">▶</a><a href="#" aria-label="Instagram placeholder">◎</a><a href="#" aria-label="Telegram placeholder">➤</a></div>
+      </div>
+      <div><h3>Quick Links</h3><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+      <div><h3>Support</h3><a href="#contact">FAQs</a><a href="#contact">Terms &amp; Conditions</a><a href="#contact">Privacy Policy</a></div>
+      <div><h3>Contact Us</h3><p>✉ <span> Email: <b>[YOUR EMAIL]</b></span></p><p>☏ <span>WhatsApp: <b>[YOUR NUMBER]</b></span></p><p>⌖ <span>Location: <b>[YOUR CITY]</b></span></p><a class="contact-cta" id="contactButton" href="#contact">Add your contact details →</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Prime VaultX. All rights reserved.</span><span>Designed for gamers <b>♥</b></span></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="order-dialog" id="orderDialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close">×</button>
+    <p class="eyebrow">ORDER REQUEST</p>
+    <h2 id="dialogTitle">Product name</h2>
+    <p id="dialogPrice" class="dialog-price"></p>
+    <p class="dialog-copy">This demo uses a placeholder contact link. Add your own WhatsApp number in <code>script.js</code> before going live.</p>
+    <label for="playerId">Player ID / notes (optional)</label>
+    <input id="playerId" type="text" placeholder="Enter details needed for this order">
+    <button class="button button-primary dialog-order" id="confirmOrder">Prepare WhatsApp Message →</button>
+    <small>Never enter your game password or OTP.</small>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
